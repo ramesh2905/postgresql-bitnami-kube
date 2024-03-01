@@ -1,0 +1,26 @@
+image:
+  tag: 16.2.0
+
+auth:
+  postgresPassword: changme
+  username: admin
+  password: changme
+  database: postgresql
+
+volumePermissions:
+  enabled: true
+
+Primary:
+  livenessProbe:
+    enabled: true
+    initialDelaySeconds: 60
+    timeoutSeconds: 10
+    failureThreshold: 5
+    successThreshold: 1
+
+  readinessProbe:
+    enabled: true
+    initialDelaySeconds: 20
+    timeoutSeconds: 10
+    failureThreshold: 5
+    successThreshold: 1
