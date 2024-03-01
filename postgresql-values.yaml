@@ -2,9 +2,9 @@ image:
   tag: 16.2.0
 
 auth:
-  postgresPassword: changme
+  postgresPassword: changeme
   username: admin
-  password: changme
+  password: changeme
   database: postgresql
 
 volumePermissions:
